@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.caxias.classificadordesimulados.controller.CmsmController">
+   <Label text="Classificador do simulado do CMSM">
+      <font>
+         <Font size="18.0" />
+      </font></Label>
+   <Label fx:id="step3Label" prefWidth="385.0" text="3. Selecione o arquivo .csv que contém a matrícula e data de nascimento" />
+   <Button fx:id="chooseBirthFileButton" mnemonicParsing="false" onAction="#chooseBirthFile" text="Selecionar" />
+   <Label text="4. Insira o número mínimo de acertos em quaisquer disciplina para ser classificado" />
+   <TextField fx:id="minResultPoints" maxWidth="42.0" prefHeight="25.0" prefWidth="42.0">
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+      <VBox.margin>
+         <Insets />
+      </VBox.margin>
+   </TextField>
+   <Label text="5. Se quiser, insira o nome da turma" />
+   <TextField fx:id="className" layoutX="289.0" layoutY="240.0" maxWidth="134.0" prefHeight="25.0" prefWidth="134.0">
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+   </TextField>
+   <Button fx:id="classifyButton" disable="true" mnemonicParsing="false" onAction="#classify" text="Gerar classificação" />
+</VBox>

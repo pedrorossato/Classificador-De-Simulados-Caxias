@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.caxias.classificadordesimulados.controller.MainController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label fx:id="step1Label" text="1. Selecione o arquivo de resultados" />
+    <ComboBox fx:id="chooseResultFile" prefWidth="150.0" />
+    <Button fx:id="chooseResultFileButton" onAction="#chooseResultFile" text="Selecionar" />
+
+    <Label fx:id="step2Label" text="2. Selecione a lógica de classificação de acordo com o modelo de prova" />
+    <ComboBox fx:id="chooseProva" prefWidth="150.0" />
+    <Button fx:id="avancarButton" mnemonicParsing="false" onAction="#next" text="Avançar" />
+
+    
+</VBox>
